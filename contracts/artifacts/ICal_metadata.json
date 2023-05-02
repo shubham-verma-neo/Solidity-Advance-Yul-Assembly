@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/9_CalldataDemo.sol": "ICal"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/9_CalldataDemo.sol": {
+			"keccak256": "0x6ae24bc973bc7385af3e9f1d2399ebac24d03a87289aea94cb076230e8cf0f74",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81dc79e283b34d26705e4d55f216c139cab7d6668742f5c979e789692b36364f",
+				"dweb:/ipfs/QmfWkNmBwVETkKJcMUz7X4RGs43NoDHi18NkCep9cbARC8"
+			]
+		}
+	},
+	"version": 1
+}

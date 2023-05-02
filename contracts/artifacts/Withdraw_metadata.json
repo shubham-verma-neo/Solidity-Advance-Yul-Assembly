@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/8_TransferValue.sol": "Withdraw"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/8_TransferValue.sol": {
+			"keccak256": "0x7e2529c5995f87540a7d41c227079572141b44b9c292c789d5a5c6c284e95c76",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d5b4984305975718d93bcde57ed761cf1ef1436d12d4b7f8a888fcd0aa4ab39",
+				"dweb:/ipfs/QmUCHwkBEDjsTVGYXzPhsQQMpwKG5g24aFiGQhGyFE1SEU"
+			]
+		}
+	},
+	"version": 1
+}

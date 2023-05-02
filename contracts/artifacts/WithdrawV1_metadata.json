@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/8_TransferValue.sol": "WithdrawV1"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/8_TransferValue.sol": {
+			"keccak256": "0x09fd57a5723450131a396e8072c39a5a1d1c4e70b7d9e132033f6dd00e4bbbf4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c7135695bf10cd51dd55061fa20bef5a83a94503ff1a20506bb93fa456b64d3",
+				"dweb:/ipfs/QmRNMJJLEyxYyWFfRLsvkQbhFWarxSr5EQGTE1f8sMv8Po"
+			]
+		}
+	},
+	"version": 1
+}

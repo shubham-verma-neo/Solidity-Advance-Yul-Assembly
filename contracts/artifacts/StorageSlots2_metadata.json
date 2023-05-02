@@ -1,0 +1,215 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "C",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "D",
+				"outputs": [
+					{
+						"internalType": "uint96",
+						"name": "",
+						"type": "uint96"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "E",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "F",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOffsetE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "slot",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "offset",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "slot",
+						"type": "uint256"
+					}
+				],
+				"name": "readBySlot",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "result",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "readE",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "e",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "readEalt",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "e",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_newE",
+						"type": "uint16"
+					}
+				],
+				"name": "writeToE",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "c",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "clearedE",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "newE",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "shiftedNewE",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "newVal",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/3_StorageSlots.sol": "StorageSlots2"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/3_StorageSlots.sol": {
+			"keccak256": "0x77e96c990b1a3afd95f037009619fd2015347b6bbd2b05c477904f58da8dee4d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c7712c6aea5b16dc52a484d9efdcd5d0bfb1199713ed4678515800c23fd06d1b",
+				"dweb:/ipfs/QmQgQE1e96chdR9oaN4qZq1z2hG3mhhnvfSX2cVhiJbgvr"
+			]
+		}
+	},
+	"version": 1
+}

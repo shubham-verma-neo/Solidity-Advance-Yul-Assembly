@@ -1,0 +1,68 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract WithdrawV1 {
+    constructor() payable {}
+
+    address public constant owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+    /*
+    transaction cost : 157323
+
+    input : 0x60806040526101e3806100136000396000f3fe608060405234801561001057600080fd5b50600436106100365760
+    003560e01c80633ccfd60b1461003b5780638da5cb5b14610045575b600080fd5b610043610063565b005b61004d6100f3565b
+    60405161005a9190610152565b60405180910390f35b600080735b38da6a701c568545dcfcb03fcb875f56beddc473ffffffff
+    ffffffffffffffffffffffffffffffff164760405161009e9061013d565b60006040518083038185875af1925050503d806000
+    81146100db576040519150601f19603f3d011682016040523d82523d6000602084013e6100e0565b606091505b509150915081
+    6100ef57600080fd5b5050565b735b38da6a701c568545dcfcb03fcb875f56beddc481565b61011481610178565b8252505056
+    5b600061012760008361016d565b9150610132826101aa565b600082019050919050565b60006101488261011a565b91508190
+    50919050565b6000602082019050610167600083018461010b565b92915050565b600081905092915050565b60006101838261
+    018a565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b5056fea264697066
+    735822122092421e359a37f07dc50372fa2e3e3b3cf888ab122cef5ab98fa94437d0f4afa664736f6c63430008070033
+
+    bytes : 486
+
+    withdraw cost : 28308
+    */
+    function withdraw() external {
+        /*
+         payable (owner).transfer(address(this).balance); 
+            =>  (bool success, bytes memory returnArr) = payable(owner)
+                            .call{gas: 2300, value: address(this).balance}("");
+        */
+        (bool success, bytes memory returnArr) = payable(owner).call{
+            value: address(this).balance
+        }("");
+        require(success);
+    }
+}
+
+contract WithdrawV2 {
+    constructor() payable {}
+
+    address public constant owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+    /*
+    transaction cost : 116919
+
+    input : 6080604052610127806100136000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560
+    e01c80633ccfd60b1460375780638da5cb5b14603f575b600080fd5b603d6059565b005b60456083565b6040516050919060a8
+    565b60405180910390f35b60008060008047735b38da6a701c568545dcfcb03fcb875f56beddc45af180608057600080fd5b50
+    565b735b38da6a701c568545dcfcb03fcb875f56beddc481565b60a28160c1565b82525050565b600060208201905060bb6000
+    830184609b565b92915050565b600060ca8260d1565b9050919050565b600073ffffffffffffffffffffffffffffffffffffff
+    ff8216905091905056fea26469706673582212203eeb801d68e3aeec4758d38a2e356a5e8e5d0d4afde7ea87d3bddecb0b87c8
+    2a64736f6c63430008070033
+    
+    bytes : 314
+
+    withdraw cost : 28027
+    */
+    function withdraw() external {
+        assembly {
+            let success := call(gas(), owner, selfbalance(), 0, 0, 0, 0)
+            if iszero(success) {
+                revert(0, 0)
+            }
+        }
+    }
+}

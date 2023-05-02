@@ -1,0 +1,57 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "605b80600d600039806000f3fe604e80600d600039806000f3fe4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742c2073656420646f20656975736d6f642074656d706f72",
+			"opcodes": "PUSH1 0x5B DUP1 PUSH1 0xD PUSH1 0x0 CODECOPY DUP1 PUSH1 0x0 RETURN INVALID PUSH1 0x4E DUP1 PUSH1 0xD PUSH1 0x0 CODECOPY DUP1 PUSH1 0x0 RETURN INVALID 0x4C PUSH16 0x72656D20697073756D20646F6C6F7220 PUSH20 0x697420616D65742C20636F6E7365637465747572 KECCAK256 PUSH2 0x6469 PUSH17 0x697363696E6720656C69742C2073656420 PUSH5 0x6F20656975 PUSH20 0x6D6F642074656D706F7200000000000000000000 ",
+			"sourceMap": "296:19:0:-:0;;273:21;270:1;261:55;335:19;270:1;325:30"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "604e80600d600039806000f3fe4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742c2073656420646f20656975736d6f642074656d706f72",
+			"opcodes": "PUSH1 0x4E DUP1 PUSH1 0xD PUSH1 0x0 CODECOPY DUP1 PUSH1 0x0 RETURN INVALID 0x4C PUSH16 0x72656D20697073756D20646F6C6F7220 PUSH20 0x697420616D65742C20636F6E7365637465747572 KECCAK256 PUSH2 0x6469 PUSH17 0x697363696E6720656C69742C2073656420 PUSH5 0x6F20656975 PUSH20 0x6D6F642074656D706F7200000000000000000000 ",
+			"sourceMap": "545:19:0:-:0;;522:21;516:4;507:58;591:19;516:4;578:33"
+		}
+	},
+	"abi": [
+		{
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "fallback"
+		}
+	]
+}

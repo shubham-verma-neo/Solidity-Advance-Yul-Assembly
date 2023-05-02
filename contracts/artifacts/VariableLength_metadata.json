@@ -1,0 +1,178 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "a",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "b",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "c",
+						"type": "uint256[]"
+					}
+				],
+				"name": "allVariable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "b",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "c",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "d",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e",
+						"type": "uint256"
+					}
+				],
+				"name": "fiveArgs",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "a",
+						"type": "uint256[]"
+					}
+				],
+				"name": "oneArgs",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "b",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "c",
+						"type": "uint256"
+					}
+				],
+				"name": "threeArgs",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "a",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "b",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "c",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VariableLength.Example",
+						"name": "b",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "c",
+						"type": "uint256"
+					}
+				],
+				"name": "threeArgsStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/7_VariableLength.sol": "VariableLength"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/7_VariableLength.sol": {
+			"keccak256": "0x4131a0e76dc4e0116c9041f6766c4065cbd788485514282da47f55345853624f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9de7177c890be5f8927d1d3e9a60dd9cf9d25300adf6a69c61ed1b4312468f72",
+				"dweb:/ipfs/QmZFzHKZdq6CwvCQSpF23hk77Zr3SaPeEiovPza5X3RXSa"
+			]
+		}
+	},
+	"version": 1
+}
